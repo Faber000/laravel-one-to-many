@@ -4,10 +4,10 @@
 <div class="container">
     <div class="card">
         <div class="card-header">
-            <h1>Lista posts</h1>
+            <h1>Lista post</h1>
         </div>
         <div class="card-body">
-            <div class="mb-3">
+            <div class="mb-2">
                 <a href="{{route('admin.posts.create')}}" class="btn btn-success">Crea post</a>
             </div>
             <table class="table table-striped">

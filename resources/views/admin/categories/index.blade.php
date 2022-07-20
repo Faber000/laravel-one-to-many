@@ -7,7 +7,7 @@
             <h1>Lista categorie</h1>
         </div>
         <div class="card-body">
-            <div class="mb-3">
+            <div class="mb-2">
                 <a href="{{route('admin.categories.create')}}" class="btn btn-success">Crea categoria</a>
             </div>
             <table class="table table-striped">
