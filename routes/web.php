@@ -13,15 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Backoffice - Area pubblica
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-// Backoffice - Area pubblica - auth
+
 Auth::routes();
 
-// Backoffice - Area privata
 Route::middleware('auth')
    ->namespace('Admin')
    ->name('admin.')
@@ -32,7 +31,7 @@ Route::middleware('auth')
     Route::resource('categories', 'CategoryController');
 });
 
-// Front office
+
 Route::get("{any?}", function() {
     return view("guest.home");
 })->where("any", ".*");
